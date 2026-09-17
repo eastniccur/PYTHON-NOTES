@@ -1,0 +1,29 @@
+1. Immutability (The Core Mental Model)
+Rule: Strings in Python are immutable. Once created, a string object in memory cannot be changed.
+Production Trap: Methods like .replace(), .upper(), or .strip() do not modify the original string—they create and return a brand new string in memory.
+i.e.
+Pythontext = "hello"
+text.upper()
+print(text)  # Still "hello"! You must reassign: text = text.upper()
+
+2. Slicing Mechanics (sequence[start:stop:step])
+start: Inclusive starting index.
+stop: Exclusive ending index (stops right before this index).
+step: Stride length. Negative values reverse direction.
+Shortcut: Reversing a string is always s[::-1].
+
+3. String Search: find() vs. index()
+find() returns -1 when a substring isn't found (safe for control flow checks).
+index() raises a ValueError if the substring isn't found (causes crashes if unhandled).
+Rule of Thumb: Use in for checking existence (if "a" in text:) and find() if you explicitly need the integer position.
+
+4. Efficient Concatenation 
+Avoid using + in loops to build large strings (it creates a new string object on every iteration, leading to $O(n^2)$ time complexity).
+Idiomatic Approach: Collect items in a list and use ''.join(list_of_strings).Solutions:
+
+.split() converts the string into a list of individual words by splitting on spaces:
+.join() takes a list of strings and glues them together into a single string.
+
+
+In production, searching from the right end (rfind / rindex) is frequently used for parsing file extensions or URL paths:
+find() - left to right

@@ -1,0 +1,102 @@
+LIST NOTES
+
+1. Creating a list
+- A list is created with square brackets.
+- Example:
+  my_list = []
+  numbers = [1, 2, 3, 4]
+
+2. Finding the length of a list
+- Use len() to count how many items are in a list.
+- Example:
+  len(my_list)
+
+3. Accessing list items
+- First item: my_list[0]
+- Last item: my_list[-1]
+- Middle item: my_list[len(my_list) // 2]
+
+4. Adding items to a list
+- append() adds an item to the end.
+  Example:
+  my_list.append("Python")
+- insert(index, value) adds an item at a specific position.
+  Example:
+  my_list.insert(2, "SQL")
+
+5. Changing items in a list
+- You can replace an item by its index.
+- Example:
+  my_list[0] = "Java"
+
+6. Removing items from a list
+- pop() removes the last item by default.
+  Example:
+  my_list.pop()
+- pop(index) removes a specific item.
+  Example:
+  my_list.pop(1)
+- remove(value) removes the first matching value.
+  Example:
+  my_list.remove("Apple")
+
+7. Clearing and deleting a list
+- clear() removes all items from a list.
+  Example:
+  my_list.clear()
+- del my_list deletes the whole list variable.
+
+8. Sorting a list
+- sort() arranges items in ascending order.
+  Example:
+  my_list.sort()
+- sort(reverse=True) arranges items in descending order.
+  Example:
+  my_list.sort(reverse=True)
+
+9. Reversing a list
+- reverse() changes the order of items in the list.
+- Example:
+  my_list.reverse()
+
+10. Slicing a list
+- Slicing gets a part of the list.
+- Examples:
+  my_list[:3]    -> first 3 items
+  my_list[-3:]   -> last 3 items
+  my_list[2:5]   -> items from index 2 to 4
+
+11. Joining lists
+- Use + to combine two lists.
+- Example:
+  new_list = list1 + list2
+
+12. Copying a list
+- copy() creates a duplicate list.
+- Example:
+  new_list = old_list.copy()
+
+13. Checking membership
+- Use in to check whether an item exists in a list.
+- Example:
+  "Apple" in my_list
+
+14. Joining list values into a string
+- "#;  ".join(my_list) combines list items into one string.
+- Example:
+  "Google#;  Microsoft#;  Apple"
+
+15. Mixed data types
+- A list can contain different kinds of values.
+- Example:
+  mixed = ["Zakaria", 22, 1.75, "Single", "Nairobi"]
+
+16. Important reminder
+- Python lists are ordered.
+- Their items are indexed starting from 0.
+- Example:
+  first_item = my_list[0]
+
+17. Quick summary
+- append(), insert(), pop(), remove(), clear(), sort(), reverse(), slice, copy(), and in are among the most important list operations.
+- Practice them often because they are used in many Python programs.

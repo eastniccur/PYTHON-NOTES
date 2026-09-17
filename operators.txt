@@ -1,0 +1,31 @@
+1. Booleans (True, False)
+Python Trap: Python is case-sensitive. Writing true or false throws a NameError. Always capitalize: True, False.
+
+2. Operators & Pitfalls
+Division vs. Floor Division:
+--> / always returns a float (e.g., 6 / 2 $\rightarrow$ 3.0).
+--> // rounds down to the nearest integer (e.g., 7 // 2 $\rightarrow$ 3).
+-->Exponentiation: ** (e.g., 2 ** 3 $\rightarrow$ 8).
+Modulo (%): Returns the remainder. Essential for cyclic operations or checking divisibility (num % 2 == 0).
+
+3. Identity (is) vs. Equality (==)
+--> == checks Value Equality (Do both sides contain the same data?).
+-->is checks Memory Identity (Do both variables point to the exact same memory location?).
+Rule of Thumb: Never use is to compare numbers or strings. 
+Use is almost exclusively for checking None (e.g., if val is None:).
+
+4. Membership Operators (in, not in)
+Used to check if an element exists inside a sequence (strings, lists, tuples, sets). Highly readable and idiomatic in Python.
+
+5. Logical Operators (and, or, not)
+Unlike C-style languages (&&, ||, !), Python uses natural English words.
+Short-Circuiting: Python stops evaluating as soon as the result is certain (e.g., in False and expr, expr is never executed).
+
+Engineer Shortcuts & Problem-Solving Tactics
+Avoid Shadowing Built-ins: Never name variables sum, min, max, type, or input.
+ Doing so overrides Python's built-in functions and creates obscure bugs.Dynamic Typing Strategy:
+ Python converts inputs from input() into str by default.
+ Always wrap inputs in int() or float() before doing math: 
+ hours = float(input("Enter hours: ")).Format Strings (f-strings): 
+ Instead of comma separation in print(), use f-strings for clean output: i.e.
+ print(f"Your weekly earning is {hours * rate}")
