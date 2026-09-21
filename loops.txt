@@ -1,0 +1,24 @@
+Loops allow you to repeat operations cleanly across collections or range conditions without writing repetitive code.
+
+WHILE LOOP:   [ Keep running IF condition is True ]  ---> Infinite until flag breaks
+FOR LOOP:     [ Walk through every item in collection ] ---> Stops automatically at the end
+
+while vs for: Use for loops when you know the collection or sequence bound in advance (range(), list, dict). Use while loops when you need to repeat an action until a dynamic condition shifts to False.
+
+break vs continue:
+
+break: Completely exits the loop immediately.
+
+continue: Skips the rest of the current iteration and jumps directly to the next item
+
+The range() function is used to return a list of numbers. 
+-->The range(start, end, step) takes three parameters: starting, ending and increment.
+
+Pass
+In python when statement is required (after semicolon), 
+but we don't like to execute any code there, we can write the word pass to avoid errors
+
+UPDATE-->update method adds the elements of the specified set to the current set. 
+It will not add any duplicate elements.
+
+EXTEND-->extend() method is used to add the elements of a list (or any iterable), to the end of the current list.

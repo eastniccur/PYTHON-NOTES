@@ -1,0 +1,63 @@
+Parameters vs Arguments:
+-->Parameters are placeholders defined in the function signature (e.g., def greet(name):).
+-->Arguments are actual values passed when invoking the function (e.g., greet("Alice")).
+
+Positional vs. Keyword Arguments
+When you pass values into a function, Python needs to know which argument goes to which parameter.
+-->Positional - arguments are passed in the order of Parameters
+-->Keyword- order doesnt matter because each value is explicitly attached to a key
+
+example: use it in .py file
+
+def describe_pet(animal_type, pet_name):
+    print(f"I have a {animal_type} named {pet_name}.")
+
+# Positional: "dog" goes to animal_type, "Buddy" goes to pet_name
+describe_pet("dog", "Buddy") 
+# Output: I have a dog named Buddy.
+
+# Swapping the order ruins the meaning!
+describe_pet("Buddy", "dog") 
+# Output: I have a Buddy named dog.
+
+# Keyword: Order doesn't matter because each value is explicitly attached to a key
+describe_pet(pet_name="Buddy", animal_type="dog")
+# Output: I have a dog named Buddy.
+.
+FLEXIBLE ARGUMENTS:
+*arguments--> gathers any number of extra positional arguments into a single tuple
+
+**arguments-->gathers any extra key=value pairs into a single dictionary.
+
+Example use it .py file:
+single:
+def make_pizza(size, *toppings):
+    print(f"Making a {size}-inch pizza with:")
+    print(toppings)  # 'toppings' becomes a tuple: ('cheese', 'mushrooms', 'peppers')
+
+make_pizza(12, "cheese", "mushrooms", "peppers")
+double:
+def user_info(**details):
+    print(details)  # 'details' becomes a dict: {'name': 'Alice', 'role': 'Admin'}
+
+user_info(name="Alice", role="Admin", status="Active")
+
+
+RETURN STATEMENT:
+# Without return: Just prints, doesn't give back a value to store
+def add_no_return(a, b):
+    result = a + b
+
+output1 = add_no_return(3, 4)
+print(output1)  # Prints: None
+
+# With return: Gives back the computed value
+def add_with_return(a, b):
+    return a + b
+
+output2 = add_with_return(3, 4)
+print(output2)  # Prints: 7
+
+
+
+

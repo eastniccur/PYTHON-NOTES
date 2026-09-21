@@ -1,0 +1,8 @@
+Dictionaries store data in key-value pairs, making them the ideal data structure
+--> for representing real-world objects with named attributes (like a user profile, a database record, or a configuration file).
+
+Key Safety Pattern: dct['key'] vs .get('key')
+
+Direct access student['gpa'] throws a KeyError crash if 'gpa' doesn't exist.
+
+Using student.get('gpa') safely returns None (or a fallback default value like student.get('gpa', 0.0)) without breaking your code.

@@ -1,0 +1,7 @@
+import module: Keeps functions contained inside the module's namespace, preventing variable name collisions.
+
+from module import item: Pulls specific functions directly into the current file's namespace.
+
+from module import *: Imports everything, but can overwrite existing variables silently.
+
+

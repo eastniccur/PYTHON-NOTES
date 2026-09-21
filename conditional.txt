@@ -1,0 +1,7 @@
+Conditionals control code flow, executing specific blocks based on whether expressions evaluate to True or False.
+
+Think of if-elif-else statements as a series of single-choice road forks:
+
+Short-Circuiting Evaluation: Python evaluates conditions top-to-bottom. As soon as ONE condition matches True, Python executes that block and skips all remaining elif and else blocks.
+
+Truthy vs Falsy: Values like 0, "", [], {}, and None are evaluated as False. Populated lists, non-zero numbers, and non-empty strings evaluate to True.

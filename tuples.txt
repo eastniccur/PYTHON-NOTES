@@ -1,0 +1,9 @@
+Tuples are almost identical to lists, but with one massive rule: 
+-->they are immutable (locked in stone). Once created, you cannot .append(), .insert(), or .pop() items.
+Why use tuples if they are locked?
+
+1.Speed & Memory: Python processes tuples faster and uses less RAM.
+
+2.Data Safety: Prevents accidental modification of constant data (like GPS coordinates or configuration settings).
+
+To modify a tuple, you must convert it to a list using list(), change it, and convert it back using tuple().

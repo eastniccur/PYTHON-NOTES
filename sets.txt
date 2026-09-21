@@ -1,0 +1,8 @@
+Sets are built around two core characteristics: uniqueness and no guaranteed order.
+
+No Duplicates: If someone tries to enter twice, the bouncer ignores the second attempt.
+
+No Fixed Positions: There are no "box numbers" or indexes. Guests move around freely inside, so you cannot do my_set[0].
+
+When to use Sets:Deduplication: Instantly removing duplicates from a list (set(my_list)).Fast Membership Checks: 
+-->Checking x in my_set is lightning fast ($O(1)$ constant time vs $O(n)$ linear time for lists).

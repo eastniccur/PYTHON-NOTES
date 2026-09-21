@@ -1,0 +1,31 @@
+Think of a list comprehension as a factory assembly line.
+
+Instead of writing 4 lines of code to create a list, set up an empty box, 
+loop through items, and append them one by one, a list comprehension packs the entire factory setup into a single line inside square brackets [].
+
+3 building blocks:
+What to output: What do you want to save into the new list?
+
+Loop source: Where are you getting the raw items from?
+
+Filter condition (optional): Do you want to keep only specific items?
+
+
+Lambda function:
+A Lambda function is like a quick sticky note. It's an anonymous (nameless) function meant to do one simple calculation quickly:
+
+# Regular function
+def double(x):
+    return x * 2
+
+
+# Lambda function
+double = lambda x: x * 2
+
+steps:
+You write lambda.
+
+You write the parameter(s) before the colon : (e.g., x or a, b).
+
+You write what to calculate after the colon :. It automatically returns this value—no return keyword needed.
+
